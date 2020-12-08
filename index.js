@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // MONGO DB CONNECTION
-const db = "mongodb://mongo:27017/docker";
+// const db = "mongodb://localhost:27017/docker"; // Localhost
+const db = "mongodb://mongo:27017/docker"; // Docker
 
 mongoose
   .connect(db, {
