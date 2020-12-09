@@ -26,7 +26,7 @@ mongoose
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Dockerizing Node App With Github Actions 3");
+  res.send("Dockerizing Node App With Github Actions 4");
 });
 
 app.get("/getData", async (req, res) => {
