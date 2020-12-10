@@ -2,12 +2,18 @@
 
 ```bash
 # Run in Docker
-docker-compose up
+docker-compose up -d
 # use -d flag to run in background
 
-# Tear down
+# Docker Tear down
 docker-compose down
 
-# To re-build
+# Docker re-build
 docker-compose build
+```
+
+- Remove dangling images
+
+```
+$ docker rmi $(docker images -f "dangling=true" -q)
 ```

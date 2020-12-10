@@ -2,7 +2,6 @@ version: "3.8"
 services:
   app:
     container_name: docker-node-mongo
-    image: docker-node-mongo
     restart: always
     build: .
     ports:
